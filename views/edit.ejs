@@ -1,0 +1,22 @@
+<div class="page-data">
+    <form method="post" action="/list/update/<%=data[0].id%>">
+       
+        <table cellpadding="11">
+            <tr>
+                <td class="label">Name</td>
+                <td><input type="text" name="name" value="<%=data[0].name%>" required /></td>
+               
+            </tr>
+            <tr>
+                <td class="label"></td>
+                <td>
+                    <button type="submit">Save</button>
+                    <button type="button" onClick="cancelAdd()">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </form> 
+</div>
+
+
+<!-- https://github.com/dannibla/nodejs-postgresql-crud/blob/master/views/customer/edit.ejs -->
